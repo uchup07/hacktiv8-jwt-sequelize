@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "peyqqopl",
+    "password": "Ihl2OPHHbLJs1FH2ypLUdHCnsiIes7mw",
+    "database": "peyqqopl",
+    "host": "arjuna.db.elephantsql.com",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "peyqqopl",
+    "password": "Ihl2OPHHbLJs1FH2ypLUdHCnsiIes7mw",
+    "database": "peyqqopl",
+    "host": "arjuna.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "peyqqopl",
+    "password": "Ihl2OPHHbLJs1FH2ypLUdHCnsiIes7mw",
+    "database": "peyqqopl",
+    "host": "arjuna.db.elephantsql.com",
+    "dialect": "postgres"
+  }
+}
