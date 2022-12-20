@@ -8,6 +8,7 @@ const generateToken = (payload) => {
 };
 
 const verifyToken = (token) => {
+  // const decoded = jwt.verify(SECRET_KEY, token);
   const decoded = jwt.verify(token, SECRET_KEY);
   return decoded;
 };
