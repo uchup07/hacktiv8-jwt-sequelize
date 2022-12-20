@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testTimeout=40000",
+    "test": "jest --testTimeout=40000 --coverage",
     "start": "nodemon app.js",
     "lint:fix": "eslint --fix ./*.js"
   },
