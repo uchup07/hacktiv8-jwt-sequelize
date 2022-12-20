@@ -4,7 +4,6 @@ const authorization = async (req, res, next) => {
   try {
     const photoId = req.params.id;
     const authenticatedUser = res.locals.user
-
     const photo = await Photo.findOne({
       where: {
         id: photoId
@@ -16,7 +15,7 @@ const authorization = async (req, res, next) => {
         message: `Photo with id ${photoId} not found`
       })
     }
-    if (photo.userId === authenticatedUser.id) {
+    if (photo.UserId === authenticatedUser.id) {
       return next()
     } else {
       return res.status(403).json({

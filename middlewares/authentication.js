@@ -3,12 +3,12 @@ const { verifyToken } = require('../helpers/jwt')
 
 const authentication = async (req, res, next) => {
   try {
-    const token = req.get("token")
+    const token = req.get("token") //headers
     const userDecoded = verifyToken(token)
     const user = await User.findOne({
       where: {
         id: userDecoded.id,
-        username: userDecoded.email
+        email: userDecoded.email
       }
     })
     if (!user) {
@@ -17,7 +17,7 @@ const authentication = async (req, res, next) => {
         message: "Error Authentication"
       })
     }
-    res.locals.user = user
+    res.locals.user = user //for authorization purpose
     return next()
   } catch (err) {
     return res.status(401).json(err)

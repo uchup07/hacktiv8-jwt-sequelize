@@ -17,13 +17,15 @@ module.exports = (sequelize, DataTypes) => {
   }
   User.init({
     username: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: DataTypes.STRING,
+    password: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',
     hooks: {
       beforeCreate: (user, opt) => {
-        const hashedPassword = hashPassword(user.password)
+        //user.pass = admin123
+        const hashedPassword = hashPassword(user.password) //1j2i30jdkpm
         user.password = hashedPassword
       }
     }
