@@ -5,13 +5,14 @@
     "database": "railway",
     "host": "containers-us-west-173.railway.app",
     "dialect": "postgres",
-    "port": 5432
+    "port": 7073
   },
   "test": {
     "username": "postgres",
     "password": "BFwOV6areXVAF2I0o2HK",
     "database": "railway",
     "host": "containers-us-west-173.railway.app",
+    "port": 7073,
     "dialect": "postgres"
   },
   "production": {
@@ -19,7 +20,7 @@
     "password": "BFwOV6areXVAF2I0o2HK",
     "database": "railway",
     "host": "containers-us-west-173.railway.app",
-    "port": 7073
+    "port": 7073,
     "dialect": "postgres"
   }
 }
